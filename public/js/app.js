@@ -19865,7 +19865,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchPosts: function fetchPosts() {
       var _this = this;
       axios.get('api/posts').then(function (response) {
-        return _this.posts = response.data;
+        return _this.posts = response.data.data;
       }).then(function (error) {
         return console.log(error);
       });

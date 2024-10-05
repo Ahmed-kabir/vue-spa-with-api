@@ -51,7 +51,7 @@
         methods: {
             fetchPosts() {
                 axios.get('api/posts')
-                .then(response => this.posts = response.data)
+                .then(response => this.posts = response.data.data)
                 .then(error =>console.log(error))
             }
         }
